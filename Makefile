@@ -14,7 +14,7 @@ OBJS = $(SRCS:.c=.o)
 all : clean $(PROG)
 
 $(PROG) : $(OBJS)
-	$(CC) $(CFLAGS) $(LDFLAGS) $(OBJS) -o $(PROG)
+	$(CC) $(CFLAGS) $(OBJS) $(LDFLAGS) -o $(PROG)
 
 argus.o : argus.c argus.h
 
